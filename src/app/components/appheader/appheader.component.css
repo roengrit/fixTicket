@@ -1,0 +1,17 @@
+.navbar-nav>.user-menu>.dropdown-menu>.user-body{
+    padding: 6px;
+    border-top:none;
+    border-bottom: 1px solid #f4f4f4;
+} 
+
+@media (max-width: 767px){
+    .logo {
+        width: 100%;
+        float: none;
+        display: none;
+    }
+    .main-sidebar {
+        padding-top:none!important;
+    }
+}
+ 
