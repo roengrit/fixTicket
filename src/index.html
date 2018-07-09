@@ -33,6 +33,11 @@
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 <body class="sidebar-mini skin-green-light">
+    <style *ngIf="window.location.href.indexOf('login')>-1">
+        html, body{
+       background-color: #00a65a!important;
+      }
+   </style>
   <app-root>
     <div class="wrapper">
 
