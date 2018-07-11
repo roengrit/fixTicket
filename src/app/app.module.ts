@@ -10,12 +10,14 @@ import { LoginComponent } from './components/login/login.component';
 import { Routes , RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component'
 import { AuthGuard } from './shared/guard/auth.guard';
+import { TicketComponent } from './components/ticket/ticket.component';
  
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full', canActivate: [AuthGuard] },
+  { path: '', redirectTo: '/ticket', pathMatch: 'full', canActivate: [AuthGuard] },
   { path: 'home', component:HomeComponent, canActivate: [AuthGuard] },
+  { path: 'ticket', component:TicketComponent, canActivate: [AuthGuard] },
   { path: 'login', component:LoginComponent },
-  { path: '**', redirectTo: '/login'}
+  { path: '**', redirectTo: '/home'}
 ]
 
 @NgModule({
@@ -26,6 +28,7 @@ const routes: Routes = [
     AppmenuComponent,
     LoginComponent,
     HomeComponent,
+    TicketComponent,
   ],
   imports: [
     BrowserModule,

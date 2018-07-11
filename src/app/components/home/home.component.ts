@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as Chart from '../../../assets/bower_components/chart.js/chart.js';
+//import * as Chart from '../../../assets/bower_components/chart.js/chart.js';
 declare var Chart: any;
 declare var $: any;
 @Component({

@@ -3,19 +3,35 @@
   <section class="sidebar">
     <!-- sidebar menu: : style can be found in sidebar.less -->
     <ul class="sidebar-menu" data-widget="tree">
-      <li class="active treeview">
-        <a href="#">
-          <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+      <li class="treeview">
+        <a href="#"  routerLink="/home">
+          <i class="fa fa-dashboard"></i>
+          <span>Dashboard</span>
         </a>
       </li>
-      <li>
+      <li class="treeview">
+        <a href="javascript:void(0)" >
+          <i class="fa fa-ticket"></i>
+          <span>Ticket</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu" >
+          <li  >
+            <a href="#" routerLink="/ticket">
+              <i class="fa fa-circle-o"></i> New</a>
+          </li>
+        </ul>
+      </li>
+      <!-- <li>
         <a href="pages/widgets.html">
-          <i class="fa fa-th"></i> <span>Widgets</span>
+          <i class="fa fa-ticket"></i> <span>Ticket</span>
           <span class="pull-right-container">
             <small class="label pull-right bg-green">new</small>
           </span>
         </a>
-      </li>
+      </li> -->
       <li class="treeview">
         <a href="#">
           <i class="fa fa-pie-chart"></i>
@@ -25,13 +41,27 @@
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
-          <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
-          <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
-          <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
+          <li>
+            <a href="pages/charts/chartjs.html">
+              <i class="fa fa-circle-o"></i> ChartJS</a>
+          </li>
+          <li>
+            <a href="pages/charts/morris.html">
+              <i class="fa fa-circle-o"></i> Morris</a>
+          </li>
+          <li>
+            <a href="pages/charts/flot.html">
+              <i class="fa fa-circle-o"></i> Flot</a>
+          </li>
+          <li>
+            <a href="pages/charts/inline.html">
+              <i class="fa fa-circle-o"></i> Inline charts</a>
+          </li>
         </ul>
       </li>
     </ul>
   </section>
   <!-- /.sidebar -->
 </aside>
+<!-- AdminLTE App -->
+<script src="assets/dist/js/adminlte.min.js"></script>
