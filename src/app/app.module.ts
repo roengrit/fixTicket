@@ -11,7 +11,8 @@ import { Routes , RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component'
 import { AuthGuard } from './shared/guard/auth.guard';
 import { TicketComponent } from './components/ticket/ticket.component';
- 
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 const routes: Routes = [
   { path: '', redirectTo: '/ticket', pathMatch: 'full', canActivate: [AuthGuard] },
   { path: 'home', component:HomeComponent, canActivate: [AuthGuard] },
@@ -33,7 +34,7 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     FormsModule,
-  
+    environment.production ? ServiceWorkerModule.register('ngsw-worker.js') : [],
     RouterModule.forRoot(routes),
      
   ],

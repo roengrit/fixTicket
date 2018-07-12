@@ -1,0 +1,9 @@
+{
+    "name": "fixTicket",
+    "short_name": "fixTicket",
+    "description": "fixTicket",  
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#00a65a",
+    "theme_color": "#00a65a"
+  }
